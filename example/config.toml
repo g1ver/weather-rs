@@ -1,0 +1,7 @@
+city = ''
+api_key = ''
+units = 'Imperial'
+#units = 'Metric'
+unit_key = 'F'
+#unit_key = 'C'
+lang = 'en'
