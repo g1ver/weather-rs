@@ -5,20 +5,22 @@ OpenWeatherMap script for polybar
 ## Install
 ```
 $ git clone https://github.com/g1ver/weather-rs.git
-$ cargo build --release --target-dir ~/.config/polybar/scripts/weather/
+$ cargo build --release 
+$ mv release/weather-rs ~/.config/polybar/scripts/weather/
+$ mv example/config.toml ~/.config/polybar/scripts/weather/
 ```
 
 ## Usage
 `Usage: ./weather-rs config_path`
-## config.toml
+## Example config.toml
 Grab an API key from [OpenWeatherMap](https://openweathermap.org/).
 
 Find desired city and grab the id from URL.
-```
-city = ''
-api_key = ''
-units = 'Metric | Imperial'
-unit_key = 'C | F'
+```toml
+city = '5368361'
+api_key = 'd2VhdGhlci1ycyBpcyBjb29s'
+units = 'Imperial'
+unit_key = 'F'
 lang = 'en'
 ```
 ## Polybar Config
