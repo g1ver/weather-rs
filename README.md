@@ -5,7 +5,7 @@ OpenWeatherMap script for polybar
 ## Install
 ```
 $ git clone https://github.com/g1ver/weather-rs.git
-$ cargo build --release --target-dir ~/.config/polybar/scripts/
+$ cargo build --release --target-dir ~/.config/polybar/scripts/weather/
 ```
 
 ## Usage
@@ -28,6 +28,6 @@ type = custom/script
 interval = 20
 format = <label>
 format-prefix = " "
-exec = ~/.config/polybar/scripts/weather/weather-rs ~/.config/polybar/scripts/weather/config.toml
+exec = ~/.config/polybar/scripts/weather/release/weather-rs ~/.config/polybar/scripts/weather/config.toml
 tail = true
 ```
